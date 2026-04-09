@@ -1,0 +1,40 @@
+.card {
+  position: relative;
+  max-width: 225px;
+  overflow: hidden;
+  transition: scale 0.3s ease;
+}
+
+.card:hover {
+  scale: 1.1;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.927);
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.likeButton {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 48px;
+  padding-inline: 4px;
+}
+
+.heart {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .card {
+    justify-self: center;
+  }
+}

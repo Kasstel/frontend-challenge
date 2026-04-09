@@ -1,0 +1,33 @@
+.catsList {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 48px;
+  padding: 3.875rem;
+}
+
+.more {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .catsList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .catsList {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .catsList {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
